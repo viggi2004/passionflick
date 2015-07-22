@@ -12,12 +12,11 @@
 var _ = require('lodash');
 // var Thing = require('./thing.model');
 var fitness = require('mongoose');
-
+var fs = require('fs');
+var path = require('path');
+var root = path.dirname(require.main.filename);
 // Get a single thing
-exports.show = function(req, res) {
-  Thing.findById(req.params.id, function (err, thing) {
-    if(err) { return handleError(res, err); }
-    if(!thing) { return res.send(404); }
-    return res.json(thing);
-  });
+exports.showlocations = function(req, res) {
+  var json = fs.readFileSync(path.join(root,'/location.json'),{encoding:'utf8'});
+  console.log(JSON.parse(json));
 };

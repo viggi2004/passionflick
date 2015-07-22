@@ -1,9 +1,12 @@
 .navbar-default{
     background-color: #000000;
+    margin-bottom: 0px;
+    border:none;
 }
 .searchbar{
     height:50px;
     margin-top:200px;
+    padding:20px;
 }
 .thing-form {
     margin: 20px 0;

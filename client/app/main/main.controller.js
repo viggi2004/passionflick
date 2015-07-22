@@ -8,7 +8,9 @@ angular.module('passionApp')
       val2 : "One",
       val3 : "Two"
     };
-
+    $http.get('/api/search/locations').success(function(data){
+    	console.log(data);
+    });
         
     
     

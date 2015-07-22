@@ -6,7 +6,8 @@ angular.module('passionApp', [
   'ngSanitize',
   'ngRoute',
   'ui.bootstrap',
-  'google.places'
+  'google.places',
+  'angucomplete-alt'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
