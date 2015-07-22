@@ -15,11 +15,19 @@
     padding: 0 0 0 0 !important;
 }
 .bg{
-    background-image:url('../../assets/images/background.JPG');
-    height:610px;
-    width:100%;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    position:relative;
+    min-height:300px;
+    width:100%; 
+    background-size:100% auto;
+    background-image:url('../../assets/images/zomato.jpg');
+    background-repeat:no-repeat;
+    background-attachment:local;
+    text-align-center;
+}
+.searchbar{
+    position:relative;
+    padding-top:5%;
+    opacity:0.9;
 }
 
 #banner {

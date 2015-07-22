@@ -1,10 +1,14 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
-  <div class="container-fluid bg">
+  <section>
+  <div  class="bg">
       
-    <div class="row">
+  <div class="container">
+    
+      
+    <div class="row" class="searchbar" style="position:relative;padding-top:5%;opacity:0.9;">
     <div class="col-md-2"></div>
     <div class="col-md-8">  
-    <div class="row" style="margin-left:5%;margin-top:25%">  
+    <div class="row" style="">  
     <div class="col-md-6 no-padding">
       <div class="input-group">
         <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
@@ -12,37 +16,31 @@
       </div>
     </div>
     <div class="col-md-2 no-padding" >
-      <!-- <div class="input-group"> -->
         <select ng-model="category" class="form-control wfull" style="">
               <option value="0">{{model.val1}}</option>
               <option value="1">{{model.val2}}</option>
               <option value="2">{{model.val3}}</option>
         </select>
-      <!-- </div> -->
     </div>
     <div class="col-md-2 no-padding">
-      <!-- <div class="input-group"> -->
          <select ng-model="ramanathan" class="form-control wfull" style="">
             <option value="0">{{model.val1}}</option>
             <option value="1">{{model.val2}}</option>
             <option value="2">{{model.val3}}</option>
           </select>  
-      <!-- </div> -->
     </div>
     <div class="col-md-2 no-padding">
-      <!-- <div class="input-group"> -->
         <button type="submit" class="wfull form-control btn btn-primary">Search</button>
-      <!-- </div> -->
     </div>
   </div>
 </div>
 <div class="col-md-2"></div>
- <!--  </div>
-/form>-->
 
-      
-  </div>  
-  </div>
+     
+  </div> <!-- end row--> 
+  </div><!--end container-->
+  </div><!-- end bg1.jpg-->
+  </section>
   
 
 <footer class="footer">
