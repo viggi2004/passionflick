@@ -13,13 +13,17 @@
       <div class="input-group">
         <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
         <!-- <input type="text" class="form-control" name="location" ng-model="location" placeholder="Type location name..">  -->
-        <!-- <angucomplete id="members"
+        <!-- <div angucomplete-alt id="members"
               placeholder="Type location name.."
-              pause="400"
+              pause="100"
               selectedobject="testObj"
               url="/api/search/locations"
               datafield="locations"
               inputclass="form-control"/> -->
+
+          <div angucomplete-alt id="ex1" placeholder="Type location name.." maxlength="50"  selected-object="selectedCountry" remote-url="api/search/locations?s=" remote-url-data-field="locations" search-fields="name" title-field="name" minlength="1" input-class="form-control form-control-small" match-class="highlight">
+          
+        </div>
                
       </div>
     </div>

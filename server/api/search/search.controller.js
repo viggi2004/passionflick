@@ -15,8 +15,17 @@ var fitness = require('mongoose');
 var fs = require('fs');
 var path = require('path');
 var root = path.dirname(require.main.filename);
+var lodash = require('lodash');
 // Get a single thing
 exports.showlocations = function(req, res) {
+
   var json = fs.readFileSync(path.join(root,'/location.json'),{encoding:'utf8'});
-  console.log(JSON.parse(json));
+  json = JSON.parse(json);
+  var prefix = req.query.s;
+  var filtered = lodash.filter(json.locations,function(item){
+	  var pattern=new RegExp('.*'+prefix+'.*');
+	  if(item.name.match(pattern))
+	  	return true;
+  });
+  return res.json({'locations':filtered});
 };

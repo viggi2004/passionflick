@@ -17,6 +17,9 @@
 .no-padding{
     padding: 0 0 0 0 !important;
 }
+.padded-row{
+    margin-top:10px;
+}
 .bg{
     position:relative;
     min-height:300px;
